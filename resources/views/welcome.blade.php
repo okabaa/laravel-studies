@@ -90,8 +90,8 @@
                     <a href="http://127.0.0.1:8000/form">form</a>
                     <a href="http://127.0.0.1:8000/deneme/forum/php/framework/sorular">Deneme 2</a>
                     <a href="http://127.0.0.1:8000/deneme/blog/haberler/spor/sorular">Deneme 3</a>
-                    <a href="http://127.0.0.1:8000/deneme/haberler">haberler</a>
                     <a href="http://127.0.0.1:8000/deneme/blog">blog</a>
+                    <a href="http://127.0.0.1:8000/haberler">haberler</a>
 
 <!--                    <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>

@@ -35,3 +35,8 @@ Route::group(['prefix'=>'deneme'], function(){
 
 
 Route::get('/deneme/{forum}/{php}/{framework}/{sorular}', 'HomeController@get_kategori');
+
+
+
+Route::get('/haberler', 'HomeController@get_haberler');
+Route::post('/haberler', 'HomeController@post_haberler');

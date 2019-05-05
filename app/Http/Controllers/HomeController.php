@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\haberler;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
@@ -36,4 +37,17 @@ class HomeController extends Controller
     public function get_kategori($forum,$php,$framework){
         return view('sorular')->with('forum',$forum)->with('php',$php)->with('framework',$framework);
     }
+
+
+
+    public function get_haberler(){
+        $haberler=haberler::all();
+        return view('haberler')->with('haberler',$haberler);
+    }
+
+    public function post_haberler(Request $repuest){
+        haberler::create($repuest->all());
+        return 'İşlem Başarılı';
+    }
+
 }
