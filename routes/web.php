@@ -11,6 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('welcome');
 });
+
+
+Route::get('/deneme', 'HomeController@get_deneme');
+
+Route::get('/form', 'HomeController@get_form');
+Route::post('/form', 'HomeController@post_form');
